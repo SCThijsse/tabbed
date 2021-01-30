@@ -2,12 +2,12 @@
 
 /* appearance */
 static const char font[]        = "monospace:size=9";
-static const char* normbgcolor  = "#141516";
-static const char* normfgcolor  = "#ecf0f1";
-static const char* selbgcolor   = "#22a7f0";
-static const char* selfgcolor   = "#ecf0f1";
-static const char* urgbgcolor   = "#db0a5b";
-static const char* urgfgcolor   = "#efc0f1";
+static const char* normbgcolor  = "#0e1d26";
+static const char* normfgcolor  = "#d6a6c4";
+static const char* selbgcolor   = "#ac414b";
+static const char* selfgcolor   = "#d6a6c4";
+static const char* urgbgcolor   = "#ac414b";
+static const char* urgfgcolor   = "#d6a6c4";
 static const char before[]      = "<";
 static const char after[]       = ">";
 static const char titletrim[]   = "...";
@@ -59,8 +59,8 @@ static Key keys[] = {
 
 	{ MODKEY,               XK_q,      killclient,  { 0 } },
 
-	{ MODKEY,               XK_u,      focusurgent, { 0 } },
-	{ MODKEY|ShiftMask,     XK_u,      toggle,      { .v = (void*) &urgentswitch } },
+	{ MODKEY,               XK_z,      focusurgent, { 0 } },
+	{ MODKEY|ShiftMask,     XK_z,      toggle,      { .v = (void*) &urgentswitch } },
 
 	{ 0,                    XK_F11,    fullscreen,  { 0 } },
 };
