@@ -1,8 +1,8 @@
 diff --git a/tabbed.c b/tabbed.c
-index c41db0c..2fdc208 100644
+index c05d7bf..d8ac459 100644
 --- a/tabbed.c
 +++ b/tabbed.c
-@@ -317,6 +317,7 @@ drawbar(void)
+@@ -326,6 +326,7 @@ drawbar(void)
  	XftColor *col;
  	int c, cc, fc, width, nbh, i;
  	char *name = NULL;
@@ -10,7 +10,7 @@ index c41db0c..2fdc208 100644
  
  	if (nclients == 0) {
  		dc.x = 0;
-@@ -367,7 +368,9 @@ drawbar(void)
+@@ -376,7 +377,9 @@ drawbar(void)
  		} else {
  			col = clients[c]->urgent ? dc.urg : dc.norm;
  		}
